@@ -7,7 +7,7 @@ _ _ _
 
 1. This portfolio showcases a comprehensive data analysis project exploring the relationship between social media usage and its potential impact on student well-being. Using a dataset focused on students' average daily usage, academic levels, and mental health indicators, I applied key data analysis techniques including exploratory data analysis (EDA), statistical summaries, and visualizations. The goal of this project is to uncover patterns and correlations that can help understand how social media habits may influence students' mental health and academic performance. This project demonstrates my ability to handle real-world data, derive insights, and communicate findings effectively.
 
-2. The dataset used in this project was obtained from a publicly available source designed for academic and research purposes. It contains anonymized responses from students regarding their average daily time spent on social media, academic level, and self-reported mental health scores. The dataset was curated to support studies exploring behavioral patterns and the psychological effects of digital habits among students.
+2. The dataset used in this project was obtained from a publicly available source designed for academic and research purposes. It contains responses from students regarding their average daily time spent on social media, academic level, and self-reported mental health scores. The dataset was curated to support studies exploring behavioral patterns and the psychological effects of digital habits among students.
 
 ## 📲 Problem Statement
 
@@ -15,7 +15,7 @@ _ _ _
    
 2. The goal is to use data-driven analysis to identify trends, detect potential risks, and provide a foundation for informed decision-making regarding healthy digital habits.
 
-## 🎯 Objective
+## 🎯 Objectives
 
 1. Objective of this project was to analyze the patterns, behaviors, and consequences of social media usage among students. Specifically, the project aimed to:
 
@@ -28,6 +28,20 @@ _ _ _
 - Uncover correlations between social media addiction and mental health indicators, such as stress levels, anxiety, or sleep quality.
 
 - Provide actionable insights and recommendations to educators, parents, and students to promote healthier digital habits and time management.
+
+## 📥 Data Collection
+
+- The dataset included variables such as:
+
+- Daily hours spent on social media
+
+- Most used platforms
+
+- Academic performance (e.g, GPA or test scores)
+
+- Mental health indicators (e.g, stress level, sleep hours, self-reported anxiety)
+
+- Data was collected in formats like Excel and CSV for ease of import into analysis tools.
 
 ## 🛠️ Tools Used
 
