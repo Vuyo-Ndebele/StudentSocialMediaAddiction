@@ -15,6 +15,20 @@ _ _ _
    
 2. The goal is to use data-driven analysis to identify trends, detect potential risks, and provide a foundation for informed decision-making regarding healthy digital habits.
 
+## 🎯 Objective
+
+The objective of this project was to analyze the patterns, behaviors, and consequences of social media usage among students. Specifically, the project aimed to:
+
+- Identify the average daily time students spend on social media platforms.
+
+- Categorize students based on their usage levels (Low, Moderate, High).
+
+- Explore the relationship between social media usage and academic performance.
+
+- Uncover correlations between social media addiction and mental health indicators, such as stress levels, anxiety, or sleep quality.
+
+- Provide actionable insights and recommendations to educators, parents, and students to promote healthier digital habits and time management.
+
 ## 🛠️ Tools Used
 
 To conduct this analysis effectively, the following tools and technologies were used:
