@@ -93,10 +93,10 @@ Policy Development: Schools and institutions should develop clear guidelines on 
 
 ## 🧮 1. Descriptive Statistics
 
- Q1. What is the average daily social media usage by academic level
- Q2. What is the average mental health score by gender
- Q3. Count how many students use each social media platform most frequently
- Q4. What’s the average addiction score for students who report that social media affects their academic performance
+ 1. What is the average daily social media usage by academic level
+ 2. What is the average mental health score by gender
+ 3. Count how many students use each social media platform most frequently
+ 4. What’s the average addiction score for students who report that social media affects their academic performance
 
 ## 📊 2. Behavioral Insights
 
