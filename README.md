@@ -23,6 +23,7 @@ To conduct this analysis effectively, the following tools and technologies were 
 
 📈 Power BI – For building interactive dashboards and presenting key insights visually
 
+
 📊 Excel
 
 - Created pivot tables to summarize key metrics such as average social media usage by academic level and mental health category
