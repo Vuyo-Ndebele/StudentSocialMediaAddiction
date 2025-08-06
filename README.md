@@ -51,7 +51,7 @@ To conduct this analysis effectively, the following tools and technologies were 
 
 - Created pivot tables to summarize key metrics such as average social media usage by academic level and mental health category
 
-- Built dynamic dashboards using charts and slicers to visualize trends in usage patterns and student well-being
+- Built dynamic dashboards using charts and slicers to visualize trends in usage patterns and students well-being
 
 - Applied business intelligence storytelling techniques to present insights through interactive dashboards and clear reports
 
