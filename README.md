@@ -100,35 +100,35 @@ Policy Development: Schools and institutions should develop clear guidelines on 
 
 ## 📊 2. Behavioral Insights
 
-Q5. What is the correlation between average daily usage and mental health score? (Use Python visualization for this, SQL for data prep)
-Q6. What is the average sleep hours for students addicted (score > 7) to social media vs those not addicted
-Q7. How does relationship status influence conflicts over social media
+ 5. What is the correlation between average daily usage and mental health score? (Use Python visualization for this, SQL for data prep)
+ 6. What is the average sleep hours for students addicted (score > 7) to social media vs those not addicted
+ 7. How does relationship status influence conflicts over social media
 
 ## 🌍 3. Demographic Breakdown
 
-Q8. Which country has the highest average addiction score
-Q9. Show the average mental health score by country and gender
-Q10. Count of students from each academic level by country
+ 8. Which country has the highest average addiction score
+ 9. Show the average mental health score by country and gender
+ 10. Count of students from each academic level by country
 
 ## ⚖️ 4. Impact Analysis
 
-Q11. Compare average academic-affecting users vs non-affecting in terms of:
+ 11. Compare average academic-affecting users vs non-affecting in terms of:
 
 - Sleep hours
 - Usage hours
 - Addiction score
   
-Q12. For each academic level, find the percentage of students who said social media affects their academics.
+ 12. For each academic level, find the percentage of students who said social media affects their academics.
 
 ## 🧠 5. Advanced SQL (Window Functions / Ranking)
 
-Q13. Rank students within their academic level by addiction score
-Q14. For each country, find the student with the highest daily usage
-Q15. Use a window function to calculate the average addiction score within each academic level
+ 13. Rank students within their academic level by addiction score
+ 14. For each country, find the student with the highest daily usage
+ 15. Use a window function to calculate the average addiction score within each academic level
 
 ## 📈 6. Custom Segmentation
 
-Q16. Categorize students into "Low", "Moderate", and "High" social media users based on Avg_Daily_Usage_Hours:
+ 16. Categorize students into "Low", "Moderate", and "High" social media users based on Avg_Daily_Usage_Hours:
 
 - Low: < 3 hrs
 - Moderate: 3–6 hrs
