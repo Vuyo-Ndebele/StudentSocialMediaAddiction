@@ -89,6 +89,8 @@ Further Research: Conduct longitudinal studies to track changes in social media 
 
 Policy Development: Schools and institutions should develop clear guidelines on social media use during school hours to minimize distractions and promote focus.
 
+# Business Questions
+
 ## 🧮 1. Descriptive Statistics
 
 Q1. What is the average daily social media usage by academic level?
