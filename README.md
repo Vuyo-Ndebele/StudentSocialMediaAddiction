@@ -11,7 +11,9 @@ _ _ _
 
 ## 📲 Problem Statement
 
-1. With the growing use of social media among students, there is increasing concern about its potential effects on mental health and academic performance. This project aims to analyze student social media usage patterns and categorize users into low, moderate, and high usage groups. By exploring how these categories correlate with mental health scores, the project seeks to uncover insights that can help educators, parents, and students better understand the impact of social media. The goal is to use data-driven analysis to identify trends, detect potential risks, and provide a foundation for informed decision-making regarding healthy digital habits.
+1. With the growing use of social media among students, there is increasing concern about its potential effects on mental health and academic performance. This project aims to analyze student social media usage patterns and categorize users into low, moderate, and high usage groups. By exploring how these categories correlate with mental health scores, the project seeks to uncover insights that can help educators, parents, and students better understand the impact of social media.
+   
+2. The goal is to use data-driven analysis to identify trends, detect potential risks, and provide a foundation for informed decision-making regarding healthy digital habits.
 
 ## 🛠️ Tools Used
 
