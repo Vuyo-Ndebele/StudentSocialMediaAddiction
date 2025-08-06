@@ -17,7 +17,7 @@ _ _ _
 
 ## 🎯 Objective
 
-The objective of this project was to analyze the patterns, behaviors, and consequences of social media usage among students. Specifically, the project aimed to:
+1. Objective of this project was to analyze the patterns, behaviors, and consequences of social media usage among students. Specifically, the project aimed to:
 
 - Identify the average daily time students spend on social media platforms.
 
