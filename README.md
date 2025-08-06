@@ -1,6 +1,6 @@
 # Student Social Media Addiction
 
-![](social_media_image.jpg)
+![](social-media-icon.jpg)
 _ _ _
 
 ## 📊 Project Overview 
