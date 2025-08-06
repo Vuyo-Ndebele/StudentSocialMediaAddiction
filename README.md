@@ -67,5 +67,5 @@ Policy Development: Schools and institutions should develop clear guidelines on 
 
 # Thank you!
 
-![](thank_you.jpg)
+![](thank-you.jpg)
 
