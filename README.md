@@ -37,9 +37,9 @@ The dataset included variables such as:
 
 - Most used platforms
 
-- Academic performance (e.g, GPA or test scores)
+- Academic performance 
 
-- Mental health indicators (e.g, stress level, sleep hours, self-reported anxiety)
+- Mental health indicators 
 
 - Data was collected in formats like Excel and CSV for ease of import into analysis tools.
 
