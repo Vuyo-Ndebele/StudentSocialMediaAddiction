@@ -31,7 +31,7 @@ _ _ _
 
 ## 📥 Data Collection
 
-- The dataset included variables such as:
+The dataset included variables such as:
 
 - Daily hours spent on social media
 
