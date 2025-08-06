@@ -17,11 +17,11 @@ _ _ _
 
 To conduct this analysis effectively, the following tools and technologies were used:
 
-- 📊 Microsoft Excel – For initial exploration, and basic visualizations
+📊 Microsoft Excel – For initial exploration, and basic visualizations
 
-- 🧮 SQL (SQL Server) – To query, filter, and organize structured data efficiently
+🧮 SQL (SQL Server) – To query, filter, and organize structured data efficiently
 
-- 📈 Power BI – For building interactive dashboards and presenting key insights visually
+📈 Power BI – For building interactive dashboards and presenting key insights visually
 
 📊 Excel
 
