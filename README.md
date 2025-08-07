@@ -145,7 +145,7 @@ Metrics to visualize:
 - Platform usage by gender
 - Academic performance vs addiction levels
 
-[View More SQL Queries here](Students_Social_Media_Addiction.sql)
+[Click here to view SQL Queries](Students_Social_Media_Addiction.sql)
 
 # Thank you!
 
