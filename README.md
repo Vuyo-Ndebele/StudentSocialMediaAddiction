@@ -71,6 +71,8 @@ To conduct this analysis effectively, the following tools and technologies were 
 
 - Used business intelligence storytelling techniques in Power BI to communicate findings effectively through visual reports and interactive elements
 
+## Dashboard
+
 ![](Students Social Media Addiction.pdf)
 
 ## ✅📊 Conclusion 
