@@ -74,7 +74,6 @@ To conduct this analysis effectively, the following tools and technologies were 
 ## 📊📈 Dashboard
 
 [📄 Open PDF Report](Students-Social-Media-Addiction.pdf)
-_ _ _
 
 ## ✅📊 Conclusion 
 
