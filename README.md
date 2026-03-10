@@ -94,7 +94,11 @@ DESCRIBE students_social_media_addiction;
 
 SELECT *
 FROM students_social_media_addiction
+
+
 WHERE avg_daily_usage_hours IS NULL
+
+
    OR mental_health_score IS NULL;
 
 3. Standardize column names
