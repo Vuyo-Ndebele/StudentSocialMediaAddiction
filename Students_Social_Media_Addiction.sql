@@ -14,31 +14,31 @@ ALTER TABLE students_social_media_addiction
 MODIFY COLUMN Age INT NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Gender VARCHAR(10) NOT NULL;
+MODIFY COLUMN Gender VARCHAR(255) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Academic_Level VARCHAR(50) NOT NULL;
+MODIFY COLUMN Academic_Level VARCHAR(255) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Country VARCHAR(100) NOT NULL;
+MODIFY COLUMN Country VARCHAR(255) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Avg_Daily_Usage_Hours DOUBLE(5,2) NOT NULL;
+MODIFY COLUMN Avg_Daily_Usage_Hours DECIMALE(4,2) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Most_Used_Platform VARCHAR(50) NOT NULL;
+MODIFY COLUMN Most_Used_Platform VARCHAR(255) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Affects_Academic_Performance VARCHAR(10) NOT NULL;
+MODIFY COLUMN Affects_Academic_Performance VARCHAR(255) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Sleep_Hours_Per_Night DOUBLE(5,2) NOT NULL;
+MODIFY COLUMN Sleep_Hours_Per_Night DECIMAL(4,2) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
 MODIFY COLUMN Mental_Health_Score INT NOT NULL;
 
 ALTER TABLE students_social_media_addiction
-MODIFY COLUMN Relationship_Status VARCHAR(50) NOT NULL;
+MODIFY COLUMN Relationship_Status VARCHAR(255) NOT NULL;
 
 ALTER TABLE students_social_media_addiction
 MODIFY COLUMN Conflicts_Over_Social_Media INT NOT NULL;
@@ -252,4 +252,5 @@ FROM (
 ) categorized
 GROUP BY usage_category
 ORDER BY total_students DESC;
+
 
