@@ -157,22 +157,29 @@ ORDER BY Number_Of_Students;
 
 -- 4. Impact Analysis
 
---  Q11. Compare average academic-affecting users vs non-affecting in terms of:
+-- Q.11 Compare average academic-affecting users vs non-affecting in terms of:
 
---  Sleep hours
---  Usage hours
---  Addiction score
+-- Sleep Hours
 
-SELECT affects_academic_performance, ROUND(AVG(sleep_hours_per_night), 2) AS Average_Sleep_Hours, ROUND(AVG(avg_daily_usage_hours), 2) AS Average_Daily_Usage, ROUND(AVG(addicted_score), 2) AS Average_Addicted_Score
-FROM socialmedia
-GROUP BY affects_academic_performance
+-- Usage Hours
+
+-- Addiction Score
+
+SELECT
+	affects_academic_performance,
+    ROUND(AVG(sleep_hours_per_night), 2) AS Average_Sleep_Hours,
+    ROUND(AVG(avg_daily_usage_hours), 2) AS Average_Daily_Usage,
+    ROUND(AVG(addicted_score), 2) AS Average_Addicted_Score
+FROM students_social_media_addiction
+GROUP BY Affects_Academic_Performance
 ORDER BY average_sleep_hours, average_daily_usage, average_addicted_score;
 
---  Q12. For each academic level, find the percentage of students who said social media       --  affects their academics.
+--  Q12. For each academic level, find the percentage of students who said social media affects their academics.
 
-SELECT academic_level,
-        ROUND(COUNT(CASE WHEN affects_academic_performance = 'Yes' THEN 1 END) * 100 / COUNT(*), 2) AS Affected_Percentage
-FROM socialmedia
+SELECT
+	academic_level,
+    ROUND(COUNT(CASE WHEN affects_academic_performance = 'Yes' THEN 1 END) * 100 / COUNT(*), 2) AS Affected_Percentage
+FROM students_social_media_addiction
 GROUP BY academic_level
 ORDER BY affected_percentage DESC;
 
@@ -184,30 +191,43 @@ SELECT
     student_id,
     academic_level,
     addicted_score,
-    RANK() OVER (PARTITION BY addicted_score ORDER BY academic_level DESC
+    RANK() OVER (
+        PARTITION BY academic_level 
+        ORDER BY addicted_score DESC
     ) AS addiction_rank
-FROM 
-socialmedia;
+FROM students_social_media_addiction;
 
 --  Q14. For each country, find the student with the highest daily usage.
 
-SELECT country, MAX(avg_daily_usage_hours) AS Student_Highest_Usage
-FROM socialmedia
-GROUP BY country
-ORDER BY student_highest_usage DESC;
+SELECT
+	country, 
+    student_id, 
+    avg_daily_usage_hours
+FROM (
+    SELECT 
+        country,
+        student_id,
+        avg_daily_usage_hours,
+        RANK() OVER (PARTITION BY country) AS rnk
+    FROM students_social_media_addiction
+) ranked
+WHERE rnk = 1
+ORDER BY Avg_Daily_Usage_Hours DESC;
 
---  Q15. Use a window function to calculate the average addiction score within each academic --  level.
+--  Q15. Use a window function to calculate the average addiction score within each academic level.
 
 SELECT 
     student_id,
     academic_level,
     addicted_score,
-    AVG(addicted_score) OVER (PARTITION BY academic_level ORDER BY academic_level DESC
+    ROUND(
+		AVG(addicted_score) OVER (
+			PARTITION BY academic_level), 2
     ) AS average_addiction_score_within_level
-FROM 
-    socialmedia;
-    
---  Q16. Categorize students into "Low", "Moderate", and "High" social media users based on          Avg_Daily_Usage_Hours:
+FROM students_social_media_addiction
+ORDER BY Addicted_Score DESC;
+
+--  Q16. Categorize students into "Low", "Moderate", and "High" social media users based on Avg_Daily_Usage_Hours:
 
 --  Low: < 3 hrs
 --  Moderate: 3–6 hrs
@@ -217,21 +237,18 @@ FROM
 SELECT 
     usage_category,
     COUNT(*) AS total_students,
-    ROUND(AVG(avg_daily_usage_hours), 2) AS avg_daily_usage
+    ROUND(AVG(avg_daily_usage_hours), 2) AS avg_daily_usage,
+    ROUND(AVG(mental_health_score), 2) AS avg_mental_health_score
 FROM (
     SELECT 
         CASE 
             WHEN avg_daily_usage_hours < 3 THEN 'Low'
             WHEN avg_daily_usage_hours BETWEEN 3 AND 6 THEN 'Moderate'
-            WHEN avg_daily_usage_hours > 6 THEN 'High'
+            ELSE 'High'
         END AS usage_category,
-        avg_daily_usage_hours
-    FROM 
-        socialmedia
-) AS categorized
-GROUP BY 
-    usage_category
-ORDER BY 
-    total_students DESC;
-
-
+        avg_daily_usage_hours,
+        mental_health_score
+    FROM students_social_media_addiction
+) categorized
+GROUP BY usage_category
+ORDER BY total_students DESC;
