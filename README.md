@@ -1,4 +1,4 @@
-# Student Social Media Addiction
+# Students Social Media Addiction
 
 ![](social-media-icon.jpg)
 _ _ _
