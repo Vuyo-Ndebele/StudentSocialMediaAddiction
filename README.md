@@ -11,7 +11,7 @@ _ _ _
 
 ## 📲 Problem Statement
 
-Social media has become an integral part of students' daily lives. While it helps with communication and information sharing, excessive usage may negatively impact mental health, sleep patterns, and academic performance.
+Social media has become an integral part of student's daily lives. While it helps with communication and information sharing, excessive usage may negatively impact mental health, sleep patterns, and academic performance.
 
 This project analyzes student data to explore the relationship between social media usage, addiction levels, mental well-being, and academic outcomes.
 
@@ -108,7 +108,7 @@ Example:
 ALTER TABLE students_social_media_addiction
 
 
-CHANGE COLUMN `addicted score` Addicted_Score INT;
+MODIFY COLUMN `addicted score` Addicted_Score INT NOT NULL;
 
 ### 4. Convert data types
 
@@ -117,7 +117,7 @@ Example:
 ALTER TABLE students_social_media_addiction
 
 
-MODIFY avg_daily_usage_hours DECIMAL(4,2);
+MODIFY avg_daily_usage_hours DECIMAL(4,2) NOT NULL;
 
 ### 5. Remove duplicate records
 
