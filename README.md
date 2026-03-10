@@ -122,15 +122,21 @@ Cleaning ensures reliable and accurate analysis results.
 
 To conduct this analysis effectively, the following tools and technologies were used:
 
-📊 Excel
+🗄️ MySQL
 
-- Created pivot tables to summarize key metrics such as average social media usage by academic level and mental health category
-
-- Built dynamic dashboards using charts and slicers to visualize trends in usage patterns and students well-being
-
-- Applied business intelligence storytelling techniques to present insights through interactive dashboards and clear reports
+- Used for data cleaning, transformation, and analysis of the social media dataset.
 
 🧮 SQL
+
+Used to perform analytical queries including:
+
+Aggregations (AVG, COUNT)
+
+CASE statements for categorization
+
+Window functions (RANK, AVG OVER)
+
+Filtering and grouping for exploratory analysis.
 
 - Wrote SQL queries to extract and filter data from the student_social_media_addiction table
 
@@ -141,6 +147,16 @@ To conduct this analysis effectively, the following tools and technologies were 
 - Identified trends in social media usage by time of day, academic level, and usage category (Low, Moderate, High)
 
 📊 Power BI
+
+Used to build an interactive dashboard to visualize insights such as:
+
+Social media usage trends
+
+Mental health correlations
+
+Academic performance impact
+
+Behavioral patterns across demographics.
 
 - Developed interactive Power BI dashboards to present deeper insights, enabling easy exploration of social media addiction patterns across different student groups
 
