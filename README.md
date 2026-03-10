@@ -45,6 +45,26 @@ Are there behavioral differences across gender, country, and academic levels?
 
 ## 📥 Data Collection
 
+The dataset contains information about students’ social media behavior and lifestyle indicators.
+
+Dataset Fields
+Column	Description
+student_id	Unique student identifier
+age	Age of the student
+gender	Gender of the student
+academic_level	Education level (High School, Undergraduate, Graduate)
+country	Country of residence
+avg_daily_usage_hours	Average hours spent on social media per day
+most_used_platform	Social media platform used most frequently
+addicted_score	Social media addiction score
+mental_health_score	Mental health rating
+sleep_hours_per_night	Average sleep hours
+affects_academic_performance	Whether social media affects academics
+relationship_status	Student relationship status
+conflicts_over_social_media	Level of relationship conflict caused by social media
+
+The dataset allows us to explore behavioral patterns, addiction trends, and academic impacts.
+
 The dataset included variables such as:
 
 - Daily hours spent on social media
