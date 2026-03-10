@@ -89,8 +89,6 @@ Data Cleaning Steps
 DESCRIBE students_social_media_addiction;
 
 ### 2. Check for missing values
-   
-</> SQL
 
 SELECT *
 
@@ -107,8 +105,6 @@ OR mental_health_score IS NULL;
 
 Example:
 
-</SQL>
-
 ALTER TABLE students_social_media_addiction
 
 
@@ -118,16 +114,12 @@ CHANGE COLUMN `addicted score` Addicted_Score INT;
 
 Example:
 
-</SQL>
-
 ALTER TABLE students_social_media_addiction
 
 
 MODIFY avg_daily_usage_hours DECIMAL(4,2);
 
 ### 5. Remove duplicate records
-
-</SQL>
 
 SELECT student_id, COUNT(*)
 
