@@ -52,28 +52,16 @@ The dataset contains information about students’ social media behavior and lif
 | Student_ID	           | Unique student identifier               | INTEGER        |
 | Age                     | Age of the student                      | INTEGER        |
 | Gender                  | Gender of the student                   | VARCHAR(255)   |
-| Academic evel           | Education level                         | VARCHAR(255)   |
+| Academic Level           | Education level                         | VARCHAR(255)   |
 | Country                 | Country of residence                    | VARCHAR(255)   |
-| Avg_Daily_Usage_Hours   | Average hours spent on social media     | VARCHAR(100)   |
-| Most_Used_Platform      | Social media platform used the most     | DECIMAL(10, 2) |
-| affects_academic_performance| addicted_score	Social media addiction score          | VARCHAR(255)            |
-| VAT                 | The amount of tax on the purchase       | FLOAT(6, 4)    |
-| total                   | The total cost of the purchase          | DECIMAL(10, 2) |
-| date                    | The date on which the purchase was made | DATE           |
-| time                    | The time at which the purchase was made | TIMESTAMP      |
-| payment_method                 | The total amount paid                   | DECIMAL(10, 2) |
-| cogs                    | Cost Of Goods sold                      | DECIMAL(10, 2) |
-| gross_margin_percentage | Gross margin percentage                 | FLOAT(11, 9)   |
-| gross_income            | Gross Income                            | DECIMAL(10, 2) |
-| rating                  | Rating                                  | FLOAT(2, 1)    |
-	
-	
-
-mental_health_score	Mental health rating
-sleep_hours_per_night	Average sleep hours
-	Whether social media affects academics
-relationship_status	Student relationship status
-conflicts_over_social_media	Level of relationship conflict caused by social media
+| Avg_Daily_Usage_Hours   | Average hours spent on social media     | VARCHAR(255)   |
+| Most_Used_Platform      | Social media platform used the most     | DECIMAL(5, 2) |
+| Affects_Academic_Performance| Addicted_score	Social media addiction score | VARCHAR(255) |
+| Sleep_Hours_Per_Night   | Average sleep hours						| DECIMAL(5, 2) |
+| Mental_Health_Score	  |										    | INTEGER |
+| Relationship_Status     | Whether social media affects relationships | VARCHAR(255) |
+| conflicts_over_social_media | Level of relationship conflict caused by social media | INTEGER |
+| Addicted_Score              | The time at which the purchase was made | INTEGER |	
 
 The dataset allows us to explore behavioral patterns, addiction trends, and academic impacts.
 
