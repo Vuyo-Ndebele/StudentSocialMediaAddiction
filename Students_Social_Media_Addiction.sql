@@ -1,6 +1,6 @@
-CREATE DATABASE Students_Social_Media_Addiction;
+CREATE DATABASE Students_Social_Media_Addiction_DB;
 
-USE Students_Social_Media_Addiction;
+USE Students_Social_Media_Addiction_DB;
 
 SELECT *
 FROM students_social_media_addiction;
@@ -252,3 +252,4 @@ FROM (
 ) categorized
 GROUP BY usage_category
 ORDER BY total_students DESC;
+
