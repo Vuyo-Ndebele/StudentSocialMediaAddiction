@@ -89,6 +89,8 @@ Data Cleaning Steps
 DESCRIBE students_social_media_addiction;
 
 2. Check for missing values
+   
+</> SQL
 
 SELECT *
 FROM students_social_media_addiction
