@@ -84,11 +84,11 @@ Before performing analysis, the dataset was cleaned using SQL to ensure accuracy
 
 Data Cleaning Steps
 
-1. Check table structure
+### 1. Check table structure
 
 DESCRIBE students_social_media_addiction;
 
-2. Check for missing values
+### 2. Check for missing values
    
 </> SQL
 
@@ -103,7 +103,7 @@ WHERE avg_daily_usage_hours IS NULL
 
 OR mental_health_score IS NULL;
 
-3. Standardize column names
+### 3. Standardize column names
 
 Example:
 
@@ -114,7 +114,7 @@ ALTER TABLE students_social_media_addiction
 
 CHANGE COLUMN `addicted score` Addicted_Score INT;
 
-4. Convert data types
+### 4. Convert data types
 
 Example:
 
@@ -125,7 +125,7 @@ ALTER TABLE students_social_media_addiction
 
 MODIFY avg_daily_usage_hours DECIMAL(4,2);
 
-5. Remove duplicate records
+### 5. Remove duplicate records
 
 </SQL>
 
