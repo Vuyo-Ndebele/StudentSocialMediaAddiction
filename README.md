@@ -93,13 +93,15 @@ DESCRIBE students_social_media_addiction;
 </> SQL
 
 SELECT *
+
+
 FROM students_social_media_addiction
 
 
 WHERE avg_daily_usage_hours IS NULL
 
 
-   OR mental_health_score IS NULL;
+OR mental_health_score IS NULL;
 
 3. Standardize column names
 
@@ -112,14 +114,26 @@ CHANGE COLUMN `addicted score` Addicted_Score INT;
 
 Example:
 
+</SQL>
+
 ALTER TABLE students_social_media_addiction
+
+
 MODIFY avg_daily_usage_hours DECIMAL(4,2);
 
 5. Remove duplicate records
 
+</SQL>
+
 SELECT student_id, COUNT(*)
+
+
 FROM students_social_media_addiction
+
+
 GROUP BY student_id
+
+
 HAVING COUNT(*) > 1;
 
 Cleaning ensures reliable and accurate analysis results.
