@@ -107,7 +107,11 @@ OR mental_health_score IS NULL;
 
 Example:
 
+</SQL>
+
 ALTER TABLE students_social_media_addiction
+
+
 CHANGE COLUMN `addicted score` Addicted_Score INT;
 
 4. Convert data types
