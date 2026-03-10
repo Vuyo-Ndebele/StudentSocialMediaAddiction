@@ -2,87 +2,158 @@ CREATE DATABASE Students_Social_Media_Addiction;
 
 USE Students_Social_Media_Addiction;
 
+SELECT *
+FROM students_social_media_addiction;
+
+DESCRIBE students_social_media_addiction;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Student_ID INT PRIMARY KEY NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Age INT NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Gender VARCHAR(10) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Academic_Level VARCHAR(50) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Country VARCHAR(100) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Avg_Daily_Usage_Hours DOUBLE(5,2) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Most_Used_Platform VARCHAR(50) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Affects_Academic_Performance VARCHAR(10) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Sleep_Hours_Per_Night DOUBLE(5,2) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Mental_Health_Score INT NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Relationship_Status VARCHAR(50) NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Conflicts_Over_Social_Media INT NOT NULL;
+
+ALTER TABLE students_social_media_addiction
+MODIFY COLUMN Addicted_Score INT NOT NULL;
+
 -- 1. Descriptive Statistics
+-- Q.1 What is the average daily social media usage by academic level?
 
--- Q1. What is the average daily social media usage by academic level?
+SELECT
+	Academic_Level,
+    ROUND(AVG(avg_daily_usage_hours), 2) AS Average_by_Academic_Level
+FROM students_social_media_addiction
+GROUP BY Academic_Level
+ORDER BY Average_by_Academic_Level DESC;
 
-SELECT academic_level, ROUND(AVG(avg_daily_usage_hours), 2) AS Average_by_AcademicLevel
-FROM socialmedia
-GROUP BY academic_level
-ORDER BY average_by_academiclevel DESC;
+-- Q.2 What is the average mental health score by gender?
 
--- Q2. What is the average mental health score by gender?
+SELECT 
+	Gender,
+    ROUND(AVG(mental_health_score), 2) AS Average_by_Gender
+FROM students_social_media_addiction
+GROUP BY Gender
+ORDER BY Average_by_Gender DESC;
 
-SELECT gender, ROUND(AVG(mental_health_score), 2) AS Average_by_Gender
-FROM socialmedia
-GROUP BY gender
-ORDER BY average_by_gender DESC;
+-- Q.3 Count how many students use each social media platform most frequently.
 
--- Q3. Count how many students use each social media platform most frequently.
+SELECT
+	Most_Used_Platform,
+    COUNT(*)  AS Number_of_Students
+FROM students_social_media_addiction
+GROUP BY Most_Used_Platform
+ORDER BY Number_of_Students DESC;
 
-SELECT most_used_platform, COUNT(*) number_of_students
-FROM socialmedia
-GROUP BY most_used_platform
-ORDER BY number_of_students DESC;
+-- Q.4 What is the average addiction score for students who report that social media affects their academic performance?
 
--- Q4. What’s the average addiction score for students who report that social media affects their academic performance?
-
-SELECT affects_academic_performance, ROUND(AVG(addicted_score), 2) AS Average_by_Addicted_Score
-FROM socialmedia
-GROUP BY affects_academic_performance
-ORDER BY average_by_addicted_score DESC;
-
+SELECT
+	Affects_Academic_Performance,
+    ROUND(AVG(addicted_score), 2) AS Average_by_Addicted_Score
+FROM students_social_media_addiction
+GROUP BY Affects_Academic_Performance
+ORDER BY Average_by_Addicted_Score DESC; 
+	
 -- 2. Behavioral Insights
 
--- Q5. What is the correlation between average daily usage and mental health score? 
+-- Q.5 What is the correlation between average daily usage and mental health score? 
 --  (Use Python visualization for this, SQL for data prep)
 
-SELECT avg_daily_usage_hours, mental_health_score
-FROM socialmedia
-WHERE avg_daily_usage_hours IS NOT NULL
-AND mental_health_score IS NOT NULL
-ORDER BY mental_health_score DESC;
+--  Q.6 What is the average sleep hours for students addicted (score > 7) to social media vs those not addicted?
 
---  Q6. What is the average sleep hours for students addicted (score > 7) to social media vs ---    those not addicted?
-
-SELECT ROUND(AVG(sleep_hours_per_night), 2) AS Average_Sleep_Hours,
+SELECT 
     CASE
-        WHEN addicted_score > 7 Then 'Addicted'
+        WHEN addicted_score > 7 THEN 'Addicted'
         ELSE 'Not Addicted'
-    END AS Addiction_Status
-FROM socialmedia
-GROUP BY addiction_status
-ORDER BY addiction_status DESC;
+    END AS Addiction_Status,
+    ROUND(AVG(sleep_hours_per_night), 2) AS Average_Sleep_Hours
+FROM students_social_media_addiction
+GROUP BY 
+    CASE
+        WHEN addicted_score > 7 THEN 'Addicted'
+        ELSE 'Not Addicted'
+    END
+ORDER BY Average_Sleep_Hours DESC;
+			
+-- Q.7 How does relationship status influence conflicts over social media?
 
--- Q7. How does relationship status influence conflicts over social media?
+SELECT
+	Relationship_Status,
+    ROUND(AVG(conflicts_over_social_media), 2) AS Average_Conflict_Score,
+    COUNT(*) AS Respondents
+FROM students_social_media_addiction
+GROUP BY Relationship_Status
+ORDER BY Respondents;
 
-SELECT relationship_status, ROUND(AVG(conflicts_over_social_media), 2) AS Average_Conflict_Score, COUNT(*) AS Respondents
-FROM socialmedia
-GROUP BY relationship_status
-ORDER BY Respondents DESC;
+-- Demographics
+-- Q.8 Which country has the highest average addiction score?
 
--- 3. Demographic Breakdown
+SELECT 
+	Country,
+    ROUND(AVG(addicted_score), 2) AS Highest_Average_Addiction_Score
+FROM students_social_media_addiction
+GROUP BY Country
+ORDER BY Highest_Average_Addiction_Score DESC;
 
---  Q8. Which country has the highest average addiction score?
+-- Q9. Show the average mental health score by country and gender.
 
-SELECT DISTINCT country, ROUND(AVG(addicted_score),2) AS Average_addiction_Score
-FROM socialmedia
-GROUP BY country
-ORDER BY average_addiction_score DESC;
-
---  Q9. Show the average mental health score by country and gender.
-
-SELECT country, gender, ROUND(AVG(mental_health_score), 2) AS Average_Mental_Score
-FROM socialmedia
-GROUP BY country, gender
+SELECT 
+    country,
+    gender,
+    mental_health_score,
+    ROUND(
+        AVG(mental_health_score) OVER (
+            PARTITION BY country, gender
+        ), 2
+    ) AS Average_Mental_Score
+FROM students_social_media_addiction
 ORDER BY Average_Mental_Score DESC;
 
---  Q10. Count of students from each academic level by country.
+-- Q10. Count of students from each academic level by country.
 
-SELECT academic_level, COUNT(*) AS Number_of_Students
-FROM socialmedia
-GROUP BY academic_level
-ORDER BY number_of_students DESC;
+SELECT 
+    academic_level,
+    country,
+    Number_Of_Students,
+    RANK() OVER (ORDER BY Number_Of_Students) AS student_rank
+FROM (
+    SELECT 
+        academic_level,
+        country,
+        COUNT(*) AS Number_Of_Students
+    FROM students_social_media_addiction
+    GROUP BY academic_level, country
+) t
+ORDER BY Number_Of_Students;
 
 -- 4. Impact Analysis
 
@@ -139,7 +210,7 @@ FROM
 --  Q16. Categorize students into "Low", "Moderate", and "High" social media users based on          Avg_Daily_Usage_Hours:
 
 --  Low: < 3 hrs
---  Moderate: 3–6 hrs
+--  Moderate: 3â€“6 hrs
 --  High: > 6 hrs
 --  Then show how these categories correlate with mental health scores.
 
@@ -162,4 +233,5 @@ GROUP BY
     usage_category
 ORDER BY 
     total_students DESC;
+
 
