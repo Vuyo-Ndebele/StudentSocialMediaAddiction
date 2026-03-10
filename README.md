@@ -76,6 +76,7 @@ The dataset included variables such as:
 - Mental health indicators 
 
 - Data was collected in formats like Excel and CSV for ease of import into analysis tools.
+- The dataset allows us to explore behavioral patterns, addiction trends, and academic impacts.
 
 ## 🛠️ Tools Used
 
