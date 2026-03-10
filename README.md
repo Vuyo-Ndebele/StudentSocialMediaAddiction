@@ -47,19 +47,31 @@ Are there behavioral differences across gender, country, and academic levels?
 
 The dataset contains information about students’ social media behavior and lifestyle indicators.
 
-Dataset Fields
-Column	Description
-student_id	Unique student identifier
-age	Age of the student
-gender	Gender of the student
-academic_level	Education level (High School, Undergraduate, Graduate)
-country	Country of residence
-avg_daily_usage_hours	Average hours spent on social media per day
-most_used_platform	Social media platform used most frequently
-addicted_score	Social media addiction score
+| Column                  | Description                             | Data Type      |
+| :---------------------- | :-------------------------------------- | :------------- |
+| Student_ID	           | Unique student identifier               | INTEGER        |
+| Age                     | Age of the student                      | INTEGER        |
+| Gender                  | Gender of the student                   | VARCHAR(255)   |
+| Academic evel           | Education level                         | VARCHAR(255)   |
+| Country                 | Country of residence                    | VARCHAR(255)   |
+| Avg_Daily_Usage_Hours   | Average hours spent on social media     | VARCHAR(100)   |
+| Most_Used_Platform      | Social media platform used the most     | DECIMAL(10, 2) |
+| affects_academic_performance| addicted_score	Social media addiction score          | VARCHAR(255)            |
+| VAT                 | The amount of tax on the purchase       | FLOAT(6, 4)    |
+| total                   | The total cost of the purchase          | DECIMAL(10, 2) |
+| date                    | The date on which the purchase was made | DATE           |
+| time                    | The time at which the purchase was made | TIMESTAMP      |
+| payment_method                 | The total amount paid                   | DECIMAL(10, 2) |
+| cogs                    | Cost Of Goods sold                      | DECIMAL(10, 2) |
+| gross_margin_percentage | Gross margin percentage                 | FLOAT(11, 9)   |
+| gross_income            | Gross Income                            | DECIMAL(10, 2) |
+| rating                  | Rating                                  | FLOAT(2, 1)    |
+	
+	
+
 mental_health_score	Mental health rating
 sleep_hours_per_night	Average sleep hours
-affects_academic_performance	Whether social media affects academics
+	Whether social media affects academics
 relationship_status	Student relationship status
 conflicts_over_social_media	Level of relationship conflict caused by social media
 
