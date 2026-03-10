@@ -1,4 +1,4 @@
-# Students Social Media Addiction
+# Analyzing Social Media Usage and Mental Health Using SQL
 
 ![](social-media-icon.jpg)
 _ _ _
