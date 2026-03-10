@@ -59,9 +59,9 @@ The dataset contains information about students’ social media behavior and lif
 | Affects_Academic_Performance| Addicted_score	Social media addiction score | VARCHAR(255) |
 | Sleep_Hours_Per_Night   | Average sleep hours						| DECIMAL(5, 2) |
 | Mental_Health_Score	  |										    | INTEGER |
-| Relationship_Status     | Whether social media affects relationships | VARCHAR(255) |
+| Relationship_Status     | Student relationship status      | VARCHAR(255) |
 | conflicts_over_social_media | Level of relationship conflict caused by social media | INTEGER |
-| Addicted_Score              | The time at which the purchase was made | INTEGER |	
+| Addicted_Score              | Social media addiction score | INTEGER |	
 
 The dataset allows us to explore behavioral patterns, addiction trends, and academic impacts.
 
