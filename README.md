@@ -78,6 +78,46 @@ The dataset included variables such as:
 - Data was collected in formats like Excel and CSV for ease of import into analysis tools.
 - The dataset allows us to explore behavioral patterns, addiction trends, and academic impacts.
 
+## 🧹 Data Cleaning
+
+Before performing analysis, the dataset was cleaned using SQL to ensure accuracy and consistency.
+
+Data Cleaning Steps
+
+1. Check table structure
+
+DESCRIBE students_social_media_addiction;
+
+2. Check for missing values
+
+SELECT *
+FROM students_social_media_addiction
+WHERE avg_daily_usage_hours IS NULL
+   OR mental_health_score IS NULL;
+
+3. Standardize column names
+
+Example:
+
+ALTER TABLE students_social_media_addiction
+CHANGE COLUMN `addicted score` Addicted_Score INT;
+
+4. Convert data types
+
+Example:
+
+ALTER TABLE students_social_media_addiction
+MODIFY avg_daily_usage_hours DECIMAL(4,2);
+
+5. Remove duplicate records
+
+SELECT student_id, COUNT(*)
+FROM students_social_media_addiction
+GROUP BY student_id
+HAVING COUNT(*) > 1;
+
+Cleaning ensures reliable and accurate analysis results.
+
 ## 🛠️ Tools Used
 
 To conduct this analysis effectively, the following tools and technologies were used:
