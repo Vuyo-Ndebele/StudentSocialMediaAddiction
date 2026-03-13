@@ -21,7 +21,7 @@ This project analyzes student data to explore the relationship between social me
 
 Key Questions This Analysis Answers
 
-- This analysis was designed to explore how social media usage may influence students' well-being and academic engagement. The key questions guiding the project include:
+This analysis was designed to explore how social media usage may influence students' well-being and academic engagement. The key questions guiding the project include:
 
 - How much time do students spend on social media on average each day?
 
