@@ -21,17 +21,17 @@ This project analyzes student data to explore the relationship between social me
 
 Key Questions This Analysis Answers
 
-This analysis was designed to explore how social media usage may influence students' well-being and academic engagement. The key questions guiding the project include:
+This analysis was designed to explore how social media usage may influence students well-being and academic engagement. The key questions guiding the project include:
 
 - How much time do students spend on social media on average each day?
 
-- Is there a relationship between time spent on social media and students’ mental health scores?
+- Is there a relationship between time spent on social media and students mental health scores?
 
 - Do students at different academic levels show different social media usage patterns?
 
 - Does increased social media usage correlate with lower or higher mental health scores?
 
-- Are there observable trends that could suggest potential impacts on students’ academic performance?
+- Are there observable trends that could suggest potential impacts on students academic performance?
 
 By addressing these questions, the analysis aims to uncover patterns that may help better understand the relationship between digital behavior and student well-being.
 
