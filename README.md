@@ -54,8 +54,8 @@ The dataset contains information about students’ social media behavior and lif
 | Gender                  | Gender of the student                   | VARCHAR(255)   |
 | Academic Level           | Education level                         | VARCHAR(255)   |
 | Country                 | Country of residence                    | VARCHAR(255)   |
-| Avg_Daily_Usage_Hours   | Average hours spent on social media     | VARCHAR(255)   |
-| Most_Used_Platform      | Social media platform used the most     | DECIMAL(5, 2) |
+| Avg_Daily_Usage_Hours   | Average hours spent on social media     | DECIMAL(5, 2)   |
+| Most_Used_Platform      | Social media platform used the most     | VARCHAR(255) |
 | Affects_Academic_Performance| Addicted_score	Social media addiction score | VARCHAR(255) |
 | Sleep_Hours_Per_Night   | Average sleep hours						| DECIMAL(5, 2) |
 | Mental_Health_Score	  | Mental health rating 			    | INTEGER |
