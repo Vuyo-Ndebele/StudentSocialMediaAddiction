@@ -143,7 +143,7 @@ ALTER TABLE students_social_media_addiction
 
 MODIFY avg_daily_usage_hours DECIMAL(5, 2) NOT NULL;
 
-5. Remove duplicate records
+5. Check duplicate records
 
 SELECT student_id, COUNT(*)
 
