@@ -5,7 +5,7 @@ _ _ _
 
 ## 📊 Project Overview 
 
-1. This portfolio project presents a comprehensive data analysis exploring the relationship between social media usage and student well-being. The analysis focuses on how the average daily time students spend on social media may relate to their academic level and mental health indicators.
+This portfolio project presents a comprehensive data analysis exploring the relationship between social media usage and student well-being. The analysis focuses on how the average daily time students spend on social media may relate to their academic level and mental health indicators.
 
 Using a structured dataset containing student responses, I applied key data analysis techniques including Exploratory Data Analysis (EDA), statistical summaries, and data visualizations to uncover meaningful patterns and relationships within the data.
 
