@@ -35,9 +35,9 @@ This analysis was designed to explore how social media usage may influence stude
 
 By addressing these questions, the analysis aims to uncover patterns that may help better understand the relationship between digital behavior and student well-being.
 
-1. With the growing use of social media among students, there is increasing concern about its potential effects on mental health and academic performance. This project aims to analyze students social media usage patterns and categorize users into low, moderate, and high usage groups. By exploring how these categories correlate with mental health scores, the project seeks to uncover insights that can help educators, parents, and students better understand the impact of social media.
+- With the growing use of social media among students, there is increasing concern about its potential effects on mental health and academic performance. This project aims to analyze students social media usage patterns and categorize users into low, moderate, and high usage groups. By exploring how these categories correlate with mental health scores, the project seeks to uncover insights that can help educators, parents, and students better understand the impact of social media.
    
-2. The goal is to extract meaningful insights using SQL and support data-driven decisions about digital well-being and to use data-driven analysis to identify trends, detect potential risks, and provide a foundation for informed decision-making regarding healthy digital habits.
+- The goal is to extract meaningful insights using SQL and support data-driven decisions about digital well-being and to use data-driven analysis to identify trends, detect potential risks, and provide a foundation for informed decision-making regarding healthy digital habits.
 
 ## 🎯 Objectives
 
