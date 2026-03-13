@@ -9,11 +9,9 @@ This portfolio project presents a comprehensive data analysis exploring the rela
 
 Using a structured dataset containing student responses, I applied key data analysis techniques including Exploratory Data Analysis (EDA), statistical summaries, and data visualizations to uncover meaningful patterns and relationships within the data.
 
-The objective of this project is to identify potential correlations between social media habits, student's mental health scores, and their academic standing. By analyzing these variables, the project aims to provide insights into how digital behavior may influence both psychological well-being and academic outcomes.
+The objective of this project is to identify potential correlations between social media habits, students mental health scores, and their academic standing. By analyzing these variables, the project aims to provide insights into how digital behavior may influence both psychological well-being and academic outcomes.
 
 This work demonstrates my ability to clean, explore, and analyze real-world datasets, extract actionable insights, and communicate findings effectively through clear analytical storytelling and visual representation.
-
-2. The dataset used in this project was obtained from a publicly available source designed for academic and research purposes. It contains responses from students regarding their average daily time spent on social media, academic level, and self-reported mental health scores. The dataset was curated to support studies exploring behavioral patterns and the psychological effects of digital habits among students.
 
 ## 📲 Problem Statement
 
@@ -23,17 +21,17 @@ This project analyzes student data to explore the relationship between social me
 
 Key Questions This Analysis Answers
 
-This analysis was designed to explore how social media usage may influence students' well-being and academic engagement. The key questions guiding the project include:
+- This analysis was designed to explore how social media usage may influence students' well-being and academic engagement. The key questions guiding the project include:
 
-How much time do students spend on social media on average each day?
+- How much time do students spend on social media on average each day?
 
-Is there a relationship between time spent on social media and students’ mental health scores?
+- Is there a relationship between time spent on social media and students’ mental health scores?
 
-Do students at different academic levels show different social media usage patterns?
+- Do students at different academic levels show different social media usage patterns?
 
-Does increased social media usage correlate with lower or higher mental health scores?
+- Does increased social media usage correlate with lower or higher mental health scores?
 
-Are there observable trends that could suggest potential impacts on students’ academic performance?
+- Are there observable trends that could suggest potential impacts on students’ academic performance?
 
 By addressing these questions, the analysis aims to uncover patterns that may help better understand the relationship between digital behavior and student well-being.
 
@@ -57,7 +55,17 @@ By addressing these questions, the analysis aims to uncover patterns that may he
 
 ## 📥 Data Collection
 
-The dataset contains information about students’ social media behavior and lifestyle indicators.
+Dataset Description
+
+The dataset used in this project was sourced from a publicly available repository intended for academic and research purposes. It contains survey responses from students regarding:
+
+Average daily time spent on social media
+
+Academic level
+
+Self-reported mental health scores
+
+The dataset was curated to support research examining behavioral patterns and the psychological effects of social media usage among students. It provides a useful foundation for exploring how digital habits may correlate with students well-being and academic engagement.
 
 | Column                  | Description                             | Data Type      |
 | :---------------------- | :-------------------------------------- | :------------- |
