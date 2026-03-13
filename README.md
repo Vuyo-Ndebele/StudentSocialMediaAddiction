@@ -21,15 +21,21 @@ Social media has become an integral part of student's daily lives. While it help
 
 This project analyzes student data to explore the relationship between social media usage, addiction levels, mental well-being, and academic outcomes.
 
-Key Questions
+Key Questions This Analysis Answers
 
-Does higher social media usage correlate with lower mental health scores?
+This analysis was designed to explore how social media usage may influence students' well-being and academic engagement. The key questions guiding the project include:
 
-Are students with higher addiction scores sleeping less?
+How much time do students spend on social media on average each day?
 
-Does social media negatively affect academic performance?
+Is there a relationship between time spent on social media and students’ mental health scores?
 
-Are there behavioral differences across gender, country, and academic levels?
+Do students at different academic levels show different social media usage patterns?
+
+Does increased social media usage correlate with lower or higher mental health scores?
+
+Are there observable trends that could suggest potential impacts on students’ academic performance?
+
+By addressing these questions, the analysis aims to uncover patterns that may help better understand the relationship between digital behavior and student well-being.
 
 1. With the growing use of social media among students, there is increasing concern about its potential effects on mental health and academic performance. This project aims to analyze students social media usage patterns and categorize users into low, moderate, and high usage groups. By exploring how these categories correlate with mental health scores, the project seeks to uncover insights that can help educators, parents, and students better understand the impact of social media.
    
