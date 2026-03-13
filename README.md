@@ -41,17 +41,21 @@ By addressing these questions, the analysis aims to uncover patterns that may he
 
 ## 🎯 Objectives
 
-1. Objective of this project was to analyze the patterns, behaviors, and consequences of social media usage among students. Specifically, the project aimed to:
+The objective of this project is to analyze the patterns, behaviors, and potential consequences of social media usage among students. The analysis focuses on understanding how students interact with social media platforms and how these behaviors may relate to their academic performance and overall well-being.
+
+Specifically, the project aims to:
 
 - Identify the average daily time students spend on social media platforms.
 
-- Categorize students based on their usage levels (Low, Moderate, High).
+- Classify students based on usage levels, grouping them into categories such as Low, Moderate, and High social media users.
 
-- Explore the relationship between social media usage and academic performance.
+- Examine the relationship between social media usage and academic performance to determine whether usage patterns may influence academic outcomes.
 
-- Uncover correlations between social media addiction and mental health indicators, such as stress levels, anxiety, or sleep quality.
+- Explore correlations between social media addiction and mental health indicators, including factors such as stress levels, anxiety, and sleep quality.
 
-- Provide actionable insights and recommendations to educators, parents, and students to promote healthier digital habits and time management.
+- Generate actionable insights and recommendations that can help educators, parents, and students promote healthier digital habits and better time management.
+
+- Through these objectives, the project demonstrates how data analysis can be applied to investigate real-world behavioral trends and support evidence-based decision-making.
 
 ## 📥 Data Collection
 
