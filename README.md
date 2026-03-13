@@ -5,7 +5,13 @@ _ _ _
 
 ## 📊 Project Overview 
 
-1. This portfolio showcases a comprehensive data analysis project exploring the relationship between social media usage and its potential impact on students well-being. Using a dataset focused on students average daily usage, academic levels, and mental health indicators, I applied key data analysis techniques including exploratory data analysis (EDA), statistical summaries, and visualizations. The goal of this project is to uncover patterns and correlations that can help understand how social media habits may influence students mental health and academic performance. This project demonstrates my ability to handle real-world data, derive insights, and communicate findings effectively.
+1. This portfolio project presents a comprehensive data analysis exploring the relationship between social media usage and student well-being. The analysis focuses on how the average daily time students spend on social media may relate to their academic level and mental health indicators.
+
+Using a structured dataset containing student responses, I applied key data analysis techniques including Exploratory Data Analysis (EDA), statistical summaries, and data visualizations to uncover meaningful patterns and relationships within the data.
+
+The objective of this project is to identify potential correlations between social media habits, student's mental health scores, and their academic standing. By analyzing these variables, the project aims to provide insights into how digital behavior may influence both psychological well-being and academic outcomes.
+
+This work demonstrates my ability to clean, explore, and analyze real-world datasets, extract actionable insights, and communicate findings effectively through clear analytical storytelling and visual representation.
 
 2. The dataset used in this project was obtained from a publicly available source designed for academic and research purposes. It contains responses from students regarding their average daily time spent on social media, academic level, and self-reported mental health scores. The dataset was curated to support studies exploring behavioral patterns and the psychological effects of digital habits among students.
 
