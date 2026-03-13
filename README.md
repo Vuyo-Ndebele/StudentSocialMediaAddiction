@@ -55,7 +55,7 @@ Specifically, the project aims to:
 
 - Generate actionable insights and recommendations that can help educators, parents, and students promote healthier digital habits and better time management.
 
-- Through these objectives, the project demonstrates how data analysis can be applied to investigate real-world behavioral trends and support evidence-based decision-making.
+Through these objectives, the project demonstrates how data analysis can be applied to investigate real-world behavioral trends and support evidence-based decision-making.
 
 ## 📥 Data Collection
 
