@@ -117,7 +117,7 @@ Example:
 ALTER TABLE students_social_media_addiction
 
 
-MODIFY avg_daily_usage_hours DECIMAL(4,2) NOT NULL;
+MODIFY avg_daily_usage_hours DECIMAL(5, 2) NOT NULL;
 
 ### 5. Remove duplicate records
 
