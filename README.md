@@ -214,7 +214,27 @@ Overall, this project showcases the value of data-driven analysis in exploring r
 
 ## 💡📌 Recommendations 
 
-Raise Awareness: Implement educational programs to inform students about the risks of excessive social media use and its impact on mental health.
+Recommendations
+
+Based on the insights derived from the analysis, several actions can be considered to promote healthier social media habits and support student well-being.
+
+Raise Awareness
+Educational programs should be implemented to inform students about the potential risks of excessive social media use and its possible effects on mental health. Increasing awareness can help students make more informed decisions about their digital habits.
+
+Monitor Usage
+Students should be encouraged to regularly monitor their daily social media usage. Tracking screen time can help individuals maintain balanced digital behavior and recognize when their usage may be becoming excessive.
+
+Strengthen Support Systems
+Educational institutions should provide accessible counseling and mental health support services for students who may be identified as high-risk users of social media or who report declining well-being.
+
+Promote Healthy Alternatives
+Schools and universities can encourage participation in offline activities such as sports, student clubs, volunteering, and social events. These activities help reduce excessive screen time while promoting social interaction and overall well-being.
+
+Encourage Further Research
+Future research should consider longitudinal studies that track social media usage and mental health over extended periods. This approach would allow researchers to better understand long-term trends and potential causal relationships.
+
+Develop Institutional Policies
+Educational institutions may benefit from establishing clear guidelines regarding social media usage during academic hours. Such policies can help minimize distractions, improve concentration, and create a more focused learning environment.Raise Awareness: Implement educational programs to inform students about the risks of excessive social media use and its impact on mental health.
 
 Monitor Usage: Encourage regular monitoring of daily social media time to help students maintain balanced digital habits.
 
