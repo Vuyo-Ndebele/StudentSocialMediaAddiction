@@ -160,47 +160,87 @@ Cleaning ensures reliable and accurate analysis results.
 
 ## 🛠️ Tools Used
 
-To conduct this analysis effectively, the following tools and technologies were used:
+To conduct this analysis effectively, a combination of database, query, and data visualization tools were used to clean, analyze, and present the dataset.
 
 🗄️ MySQL
 
-- Used for data cleaning, transformation, and analysis of the social media dataset.
+MySQL was used as the primary database environment for storing and managing the social media dataset. It enabled efficient data exploration, cleaning, and transformation before performing deeper analysis.
+
+Key tasks included:
+
+- Importing and managing the student_social_media_addiction dataset
+
+- Cleaning and preparing raw data for analysis
+
+- Structuring the dataset to support analytical queries
 
 🧮 SQL
 
-Used to perform analytical queries including:
+SQL was used extensively to perform exploratory data analysis and uncover patterns within the dataset.
 
-Aggregations (AVG, COUNT)
+Key analytical techniques included:
 
-CASE statements for categorization
+Data Extraction and Filtering
 
-Window functions (RANK, AVG OVER)
+- Queried the student_social_media_addiction table to extract relevant fields for analysis.
 
-Filtering and grouping for exploratory analysis.
+Aggregations
 
-- Wrote SQL queries to extract and filter data from the student_social_media_addiction table
+Calculated metrics such as:
 
-- Performed aggregations to calculate average daily usage, mental health scores, and usage distribution by academic level
+- Average daily social media usage
 
-- Used GROUP BY, ORDER BY, CASE WHEN, CTEs, and subqueries for in-depth behavioral analysis
+- Average mental health scores
 
-- Identified trends in social media usage by time of day, academic level, and usage category (Low, Moderate, High)
+- Distribution of usage across academic levels
+
+- Functions used: AVG(), COUNT(), SUM()
+
+Data Categorization
+
+Used CASE statements to classify students into usage categories:
+
+- Low usage
+
+- Moderate usage
+
+- High usage
+
+Advanced Query Techniques
+
+Applied SQL features such as:
+
+- GROUP BY
+
+- ORDER BY
+
+- CASE WHEN
+
+- Common Table Expressions (CTEs)
+
+- Subqueries
+
+- Window functions such as RANK() and AVG() OVER()
+
+These techniques enabled deeper analysis of behavioral patterns across different student groups.
 
 📊 Power BI
 
-Used to build an interactive dashboard to visualize insights such as:
+Power BI was used to transform analytical findings into interactive dashboards and visual reports that communicate insights effectively.
 
-Social media usage trends
+Key visualizations included:
 
-Mental health correlations
+- Social media usage distribution among students
 
-Academic performance impact
+- Correlations between social media usage and mental health scores
 
-Behavioral patterns across demographics.
+- Comparisons across academic levels
 
-- Developed interactive Power BI dashboards to present deeper insights, enabling easy exploration of social media addiction patterns across different student groups
+- Behavioral patterns across different usage categories
 
-- Used business intelligence storytelling techniques in Power BI to communicate findings effectively through visual reports and interactive elements
+Interactive dashboards were developed to allow users to explore the data dynamically, making it easier to identify trends and patterns.
+
+Power BI’s business intelligence storytelling capabilities were leveraged to present insights through clear visuals, filters, and interactive elements.
 
 ## 📊📈 Dashboard
 
